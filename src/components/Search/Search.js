@@ -25,7 +25,7 @@ const Search = ({ searchData }) => {
 
   useEffect(() => {
     filterData();
-  }, [inputValue]);
+  }, [inputValue]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className="relative flex text-dark-gray bg-white p-5 gap-5 items-center rounded-lg basis-2/5 shadow-3xl">

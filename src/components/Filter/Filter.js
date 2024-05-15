@@ -34,7 +34,7 @@ const Filter = ({ filteredData }) => {
     if (selectedOption) {
       filterData();
     }
-  }, [selectedOption]);
+  }, [selectedOption]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleSelect = (event) => {
     setSelectedOption(event.target.value);

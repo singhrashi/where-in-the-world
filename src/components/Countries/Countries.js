@@ -3,7 +3,6 @@ import Card from "../Card/Card";
 import Search from "../Search/Search";
 import Filter from "../Filter/Filter";
 import { Link } from "react-router-dom";
-import Header from "../Header/Header";
 
 const Countries = () => {
   const [data, setData] = useState([]);
