@@ -12,7 +12,7 @@ const Country = () => {
 
   useEffect(() => {
     dispatch(fetchCountryDetailsPage(countryCode));
-  }, [dispatch]);
+  }, [dispatch]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (loading) return <Spinner />;
   if (error) return <div>No Details available</div>;
